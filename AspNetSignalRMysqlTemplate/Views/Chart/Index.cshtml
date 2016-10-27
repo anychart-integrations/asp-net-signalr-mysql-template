@@ -1,0 +1,42 @@
+﻿@model IEnumerable<AspNetSignalRMysqlTemplate.fruit>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="https://cdn.anychart.com/js/latest/anychart-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.anychart.com/css/latest/anychart-ui.min.css" />
+    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.1.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <link rel="stylesheet" href="/Css/style.css" />
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        $(function () {
+            anychart.onDocumentReady(function () {
+                // set chart
+                var chart = anychart.pie(@Html.Raw(ViewBag.ChartData));
+                chart.title("@ViewBag.ChartTitle");
+                chart.container("container");
+                chart.draw();
+                // set SignalR client for chart updating
+                var chartHub = $.connection.chartHub;
+                chartHub.client.updateChart = function (data) {
+                    console.log(data);
+                    chart.data(data);
+                };
+                $.connection.hub.start().done(function () {
+                    console.log("Connect!");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
