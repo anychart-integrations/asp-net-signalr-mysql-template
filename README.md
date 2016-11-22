@@ -8,9 +8,9 @@ This example shows how to use Anychart library with the C# programming language 
 This example uses .NET framework 4.6.1, ASP.NET 4.0.30319, ASP.NET MVC 5.2, SignalR 2.2.1, Visual Studio 2015 Community, MySQL 5.6 and MySQL Connector/NET 6.9.9.0 - ADO.NET driver for MySQL. 
 To check your installations, please, use Windows Control Panel -> Programs and features.
 If you miss some installations, please, visit:<br />
-[MySQL download page](https://dev.mysql.com/downloads/installer/) and [installation instructions](http://dev.mysql.com/doc/refman/5.7/en/installing.html) to setup MySQL<br />
-[Visual Studio download page](https://www.visualstudio.com/downloads/) to install Visual Studio, .NET framework and ASP.NET <br />
-[Connector/Net download page](https://dev.mysql.com/downloads/connector/net/6.9.html) to install MySQL Connector/NET<br />
+[MySQL download page](https://dev.mysql.com/downloads/installer/) and [installation instructions](http://dev.mysql.com/doc/refman/5.7/en/installing.html) to setup MySQL;<br />
+[Visual Studio download page](https://www.visualstudio.com/downloads/) to install Visual Studio, .NET framework and ASP.NET;<br />
+[Connector/Net download page](https://dev.mysql.com/downloads/connector/net/6.9.html) to install MySQL Connector/NET.<br />
 
 To start this example run commands listed below.
 
@@ -36,7 +36,7 @@ Now you can update MySQL database data, run:
 ```
 $  "[YOUR_PATH_TO_MYSQL]\bin\mysql.exe" < database_update.sql
 e.g:  
-$  "C:\Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe" -uroot -ppassword < database_update.sql
+$  "C:\Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe" -uroot -p < database_update.sql
 ```
 
 The chart on web page will update automatically
