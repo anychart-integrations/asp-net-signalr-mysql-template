@@ -34,7 +34,7 @@ If you have some problems with MySQL connection, ensure that MySql.Data.Entity.E
 
 Now you can update MySQL database data, run:
 ```
-$  "[YOUR_PATH_TO_MYSQL]\bin\mysql.exe" < database_update.sql
+$  "[YOUR_PATH_TO_MYSQL]\bin\mysql.exe" -u[USER_NAME] -p < database_update.sql
 e.g:  
 $  "C:\Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe" -uroot -p < database_update.sql
 ```
