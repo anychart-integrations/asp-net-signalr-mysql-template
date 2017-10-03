@@ -88,8 +88,8 @@ Database - [MySQL](https://www.mysql.com/)<br />
 * [Technical Support](https://www.anychart.com/support)
 
 ## License
-AnyChart ASP.NET/SignalR/C#/MySql integration sample includes two parts:
-- Code of the integration sample that allows to use Javascript library (in this case, AnyChart) with ASP.NET framework, SignalR library, C# language and MySql database. You can use, edit, modify it, use it with other Javascript libraries without any restrictions. It is released under [Apache 2.0 License](https://github.com/anychart-integrations/asp-net-signalr-mysql-template/blob/master/LICENSE).
+AnyChart ASP.NET/SignalR/C#/MySQL integration sample includes two parts:
+- Code of the integration sample that allows to use Javascript library (in this case, AnyChart) with ASP.NET framework, SignalR library, C# language and MySQL database. You can use, edit, modify it, use it with other Javascript libraries without any restrictions. It is released under [Apache 2.0 License](https://github.com/anychart-integrations/asp-net-signalr-mysql-template/blob/master/LICENSE).
 - AnyChart JavaScript library. It is released under Commercial license. You can test this plugin with the trial version of AnyChart. Our trial version is not limited by time and doesn't contain any feature limitations. Check details [here](https://www.anychart.com/buy/).
 
 If you have any questions regarding licensing - please contact us. <sales@anychart.com>
